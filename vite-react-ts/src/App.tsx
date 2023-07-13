@@ -34,8 +34,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <h1>Seam Components</h1>
-      <SeamProvider publishableKey='seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL'>
-        <ConnectAccountButton className='connect-account-button' />
+      <SeamProvider publishableKey="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL">
+        <ConnectAccountButton className="connect-account-button" />
         <DeviceTable />
       </SeamProvider>
     </>
