@@ -1,3 +1,8 @@
+import {
+  ConnectAccountButton,
+  DeviceTable,
+  SeamProvider,
+} from '@seamapi/react'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -28,6 +33,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <h1>Seam Components</h1>
+      <SeamProvider publishableKey='seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL'>
+        <ConnectAccountButton className='connect-account-button' />
+        <DeviceTable />
+      </SeamProvider>
     </>
   )
 }

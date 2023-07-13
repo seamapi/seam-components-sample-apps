@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.connect-account-button {
+  margin-bottom: 2rem;
+  display: block;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
