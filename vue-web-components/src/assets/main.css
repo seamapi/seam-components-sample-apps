@@ -8,6 +8,11 @@
   font-weight: normal;
 }
 
+.connect-account-button {
+  margin-bottom: 2rem;
+  display: block;
+}
+
 a,
 .green {
   text-decoration: none;

@@ -14,6 +14,8 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
+    <seam-connect-account-button class='connect-account-button' publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"></seam-connect-account-button>
+    <seam-device-table publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"></seam-device-table>
   </main>
 </template>
 
