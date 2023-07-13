@@ -1,6 +1,18 @@
-# vue-web-components
+# Vue Web Components
 
 This template should help get you started developing with Vue 3 in Vite.
+
+## Run
+
+```
+$ npm i
+$ npm start
+```
+
+## Stack
+
+- Vue: https://vuejs.org/
+- Web Components: https://vuejs.org/guide/extras/web-components.html
 
 ## Recommended IDE Setup
 
