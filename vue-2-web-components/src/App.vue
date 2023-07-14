@@ -15,6 +15,8 @@ import TheWelcome from './components/TheWelcome.vue'
 
     <main>
       <TheWelcome />
+      <seam-connect-account-button class='connect-account-button' publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"></seam-connect-account-button>
+      <seam-device-table publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"></seam-device-table>
     </main>
   </div>
 </template>
@@ -22,6 +24,11 @@ import TheWelcome from './components/TheWelcome.vue'
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+.connect-account-button {
+  margin-bottom: 2rem;
+  display: block;
 }
 
 .logo {

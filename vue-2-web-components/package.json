@@ -8,6 +8,7 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "@seamapi/react": "^1.30.0",
     "vue": "^2.7.7"
   },
   "devDependencies": {
