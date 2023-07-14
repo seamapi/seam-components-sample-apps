@@ -13,6 +13,7 @@ $ npm start
 
 - Vue: https://vuejs.org/
 - Web Components: https://vuejs.org/guide/extras/web-components.html
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/vue
 
 ## Recommended IDE Setup
 
