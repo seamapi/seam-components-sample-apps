@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
+## Run
+
+```
+$ npm i
+$ npm start
+```
+
+## Stack
+
+- Angular: https://angular.io/
+- TypeScript: https://www.typescriptlang.org/
+- Web Components: https://angular.io/api/core/CUSTOM_ELEMENTS_SCHEMA
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/angular
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
