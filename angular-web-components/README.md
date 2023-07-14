@@ -12,7 +12,6 @@ $ npm start
 ## Stack
 
 - Angular: https://angular.io/
-- TypeScript: https://www.typescriptlang.org/
 - Web Components: https://angular.io/api/core/CUSTOM_ELEMENTS_SCHEMA
 - Seam Components: https://docs.seam.co/latest/seam-components/overview/angular
 
