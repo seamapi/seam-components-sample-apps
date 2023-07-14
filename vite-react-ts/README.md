@@ -12,4 +12,4 @@ $ npm start
 - Vite: https://vitejs.dev/
 - React: https://react.dev/
 - TypeScript: https://www.typescriptlang.org/
-- Seam Components: https://docs.seam.co/latest/seam-components/overview/react
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
