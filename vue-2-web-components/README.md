@@ -1,6 +1,19 @@
-# vue-2-web-components
+# Vue 2 Web Components
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 2 in Vite.
+
+## Run
+
+```
+$ npm i
+$ npm start
+```
+
+## Stack
+
+- Vue: https://v2.vuejs.org/
+- Web Components: https://vuejs.org/guide/extras/web-components.html
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/vue
 
 ## Recommended IDE Setup
 
