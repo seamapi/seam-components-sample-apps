@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@seamapi/react": "^1.28.1",
+    "@seamapi/react": "^1.41.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
