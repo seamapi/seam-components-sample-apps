@@ -1,3 +1,22 @@
+# Next.js React TypeScript
+
+## Run
+
+```
+$ npm i
+$ npm run build
+$ npm start
+```
+
+## Stack
+
+- Next.js: https://nextjs.org/
+- React: https://react.dev/
+- TypeScript: https://www.typescriptlang.org/
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
+
+## Description
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
