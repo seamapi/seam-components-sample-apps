@@ -1,3 +1,10 @@
+'use client'
+
+import {
+  ConnectAccountButton,
+  DeviceTable,
+  SeamProvider,
+} from '@seamapi/react'
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -37,6 +44,14 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <h1>Seam Components</h1>
+      <div className={styles.devices}>
+        <SeamProvider publishableKey="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL">
+          <ConnectAccountButton className="connect-account-button" />
+          <DeviceTable />
+        </SeamProvider>
       </div>
 
       <div className={styles.grid}>
