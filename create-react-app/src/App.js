@@ -1,3 +1,9 @@
+import {
+  ConnectAccountButton,
+  DeviceTable,
+  SeamProvider,
+} from '@seamapi/react'
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +24,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <h1>Seam Components</h1>
+        <SeamProvider publishableKey="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL">
+          <ConnectAccountButton className="connect-account-button" />
+          <DeviceTable />
+        </SeamProvider>
+      </main>
     </div>
   );
 }
