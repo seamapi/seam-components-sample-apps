@@ -1,3 +1,18 @@
+# Create React App
+
+## Run
+
+```
+$ npm i
+$ npm start
+```
+
+## Stack
+
+- Create React App: https://create-react-app.dev/
+- React: https://react.dev/
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
