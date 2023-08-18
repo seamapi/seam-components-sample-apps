@@ -14,18 +14,28 @@ $ npm start
 - TypeScript: https://www.typescriptlang.org/
 - Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
 
-## Special Setup
+## Setup
 
-### Use Metro
+_https://reactnative.dev/docs/environment-setup_
+
+### Bootstrap
+
+Generate a new project with
+
+```
+$ npx create-expo-app MyApp
+```
+
+### Configuration
 
 1. Update the to the latest dependency versions.
-2. Set the bundler in `app.json`:
-  ```json
-    "web": {
-      "bundler": "metro"
-    }
-  ```
+2. Set the bundler in `app.json` to use [Metro](https://facebook.github.io/metro/):
+   ```json
+   "web": {
+     "bundler": "metro"
+   }
+   ```
 3. Configure Metro to resolve `mjs` extensions in `metro.config.js`:
-  ```js
-  config.resolver.sourceExts.push("mjs");
-  ```
+   ```js
+   config.resolver.sourceExts.push("mjs");
+   ```
