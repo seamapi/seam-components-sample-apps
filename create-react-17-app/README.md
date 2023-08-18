@@ -13,6 +13,71 @@ $ npm start
 - React: https://react.dev/
 - Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
 
+## Setup
+
+_https://create-react-app.dev/_
+
+### Bootstrap
+
+Generate a new project with
+
+```
+$ npx create-react-app my-app
+```
+
+### Configuration
+
+1. There is an [ESLint dependency issue](https://github.com/facebook/create-react-app/issues/13189#issuecomment-1683394166)
+   with the default Create React Template.
+   To resolve it, install `@babel/plugin-proposal-private-property-in-object`.
+   ```
+   $ npm i --save-dev @babel/plugin-proposal-private-property-in-object
+   ```
+2. Webpack will generate warnings about missing source maps.
+   These may be safely ignored.
+   To [suppress these warnings](https://github.com/facebook/create-react-app/discussions/11767#discussioncomment-2421668),
+   setup [Craco](https://craco.js.org/).
+   Then create a `craco.config.js` with an `ignoreWarnings` function like
+   ```js
+   module.exports = {
+     webpack: {
+       configure: {
+         ignoreWarnings: [
+           function ignoreSourcemapsloaderWarnings(warning) {
+             return (
+               warning.module &&
+               warning.module.resource.includes("node_modules/svix") &&
+               warning.details &&
+               warning.details.includes("source-map-loader")
+             );
+           },
+         ],
+       },
+     },
+   };
+   ```
+3. There is a [known issue](https://github.com/facebook/react/issues/20235)
+   importing `react/jsx-runtime` with Webpack.
+   This is fixed in React 18, but a fix will not be applied to older React versions.
+   To resolve this issue, setup [Craco](https://craco.js.org/).
+   Then create a `craco.config.js` with an aliases like
+   ```js
+    module.exports = {
+      webpack: {
+        configure: {
+          resolve: {
+            alias: {
+              "react/jsx-dev-runtime": "react/jsx-dev-runtime.js",
+              "react/jsx-runtime": "react/jsx-runtime.js",
+            },
+          },
+        },
+      },
+    };
+   ```
+4. Downgrade the dependency versions to match the ones in `package.json`,
+   and update the use of the React render API to match that in `src/index.js`.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
