@@ -38,6 +38,9 @@ by setting the `ignoredElements` option:
 Vue.config.ignoredElements = [/^seam-/]
 ```
 
+For a step-by-step walkthrough,
+see the Seam guide for [getting started with Vue](https://docs.seam.co/latest/seam-components/overview/vue).
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).

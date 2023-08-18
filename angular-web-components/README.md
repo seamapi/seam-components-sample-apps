@@ -32,6 +32,7 @@ Web Components may be used directly in Angular if the `CUSTOM_ELEMENTS_SCHEMA`
 is configured on the main application module.
 However, the [recommended approach](https://manuel-rauber.com/2021/02/23/youre-using-custom_elements_schema-wrong/)
 is to wrap each custom element as an Angular Component.
+
 For a step-by-step walkthrough,
 see the Seam guide for [getting started with Angular](https://docs.seam.co/latest/seam-components/overview/angular).
 
