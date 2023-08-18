@@ -29,7 +29,7 @@ $ npx create-next-app my-app
 
 ### Configuration
 
-Seam Components are [Client Components].
+Seam Components are [Client Components](https://nextjs.org/docs/getting-started/react-essentials#client-components).
 Pages and components that use them must set the `"use client"` directive.
 
 ## Description
