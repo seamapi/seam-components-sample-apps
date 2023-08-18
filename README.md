@@ -1,4 +1,4 @@
-# Seam Components Sample Apps
+# Seam Components: Sample Apps
 
 _This repository contains sample applications.
 The source code for Seam Components may be found at [seamapi/react](https://github.com/seamapi/react)._
