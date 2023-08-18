@@ -15,6 +15,41 @@ $ npm start
 - Web Components: https://vuejs.org/guide/extras/web-components.html
 - Seam Components: https://docs.seam.co/latest/seam-components/overview/vue
 
+## Setup
+
+_https://cli.vuejs.org/guide/creating-a-project.html_
+
+### Bootstrap
+
+Generate a new project with
+
+```
+$ vue create my-app
+```
+
+### Configuration
+
+Vue supports Web Components with no additional setup.
+However, it is recommended to
+[Skip Component Resolution](https://vuejs.org/guide/extras/web-components.html#using-custom-elements-in-vue)
+by setting the `isCustomElement` compiler option in `vite.config.js`:
+
+```js
+import vue from '@vitejs/plugin-vue'
+
+export default {
+  plugins: [
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.startsWith('seam-')
+        }
+      }
+    })
+  ]
+}
+```
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
