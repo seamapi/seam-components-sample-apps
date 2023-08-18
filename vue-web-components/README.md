@@ -17,14 +17,14 @@ $ npm start
 
 ## Setup
 
-_https://cli.vuejs.org/guide/creating-a-project.html_
+_https://github.com/vuejs/create-vue_
 
 ### Bootstrap
 
 Generate a new project with
 
 ```
-$ vue create my-app
+$ npm create vue@latest
 ```
 
 ### Configuration
