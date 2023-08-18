@@ -14,6 +14,22 @@ $ npm start
 - TypeScript: https://www.typescriptlang.org/
 - Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
 
+## Setup
+
+_https://vitejs.dev/guide/_
+
+### Bootstrap
+
+Generate a new project with
+
+```
+$ npm create vite my-app
+```
+
+### Configuration
+
+No configuration required.
+
 ## Description
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
