@@ -1,7 +1,5 @@
 # Angular Web Components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
-
 ## Run
 
 ```
@@ -15,9 +13,31 @@ $ npm start
 - Web Components: https://angular.io/api/core/CUSTOM_ELEMENTS_SCHEMA
 - Seam Components: https://docs.seam.co/latest/seam-components/overview/angular
 
-## Special Setup
+## Setup
 
+_https://angular.io/guide/setup-local_
 
+### Bootstrap
+
+Generate a new project with
+
+```
+$ npm install -g @angular/cli
+$ ng new my-app
+```
+
+### Configuration
+
+Web Components may be used directly in Angular if the `CUSTOM_ELEMENTS_SCHEMA`
+is configured on the main application module.
+However, the [recommended approach](https://manuel-rauber.com/2021/02/23/youre-using-custom_elements_schema-wrong/)
+is to wrap each custom element as an Angular Component.
+For a step-by-step walkthrough,
+see the Seam guide for [getting started with Angular](https://docs.seam.co/latest/seam-components/overview/angular).
+
+## Description
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
 ## Development server
 
