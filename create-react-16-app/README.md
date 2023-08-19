@@ -60,7 +60,7 @@ $ npx create-react-app my-app
    importing `react/jsx-runtime` with Webpack.
    This is fixed in React 18, but a fix will not be applied to older React versions.
    To resolve this issue, setup [Craco](https://craco.js.org/).
-   Then create a `craco.config.js` with an aliases like
+   Then create a `craco.config.js` with aliases like
    ```js
     module.exports = {
       webpack: {
