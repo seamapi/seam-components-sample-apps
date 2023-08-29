@@ -28,7 +28,11 @@ function App() {
         <h1>Seam Components</h1>
         <SeamProvider publishableKey="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL">
           <ConnectAccountButton className="connect-account-button" />
-          <DeviceTable />
+          <DeviceTable
+            onDeviceClick={(deviceId) => {
+              console.log(deviceId);
+            }}
+          />
         </SeamProvider>
       </main>
     </div>
