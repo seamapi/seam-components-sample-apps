@@ -15,5 +15,20 @@
       ></seam-device-table>
     </main>
     <script type="module" src="https://react.seam.co/v/1.47.0/dist/elements.js"></script>
+    <script>
+      globalThis.customElements.whenDefined("seam-device-table").then(() => {
+        const elements = globalThis.document.getElementsByTagName("seam-device-table");
+
+        const element = elements[0];
+
+        if (element == null) {
+          throw new Error("Cannot find seam-device-table in document");
+        }
+
+        element.onDeviceClick = (deviceId) => {
+          console.log(deviceId);
+        };
+      });
+    </script>
   </body>
 </html>
