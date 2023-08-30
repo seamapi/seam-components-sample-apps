@@ -474,7 +474,7 @@
 
 <div class='devices'>
   <connect-account-button [publishableKey]="'seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL'"></connect-account-button>
-  <device-table [publishableKey]="'seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL'"></device-table>
+  <device-table [publishableKey]="'seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL'" (deviceClick)="handleDeviceClick($event)"></device-table>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
