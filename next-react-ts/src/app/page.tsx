@@ -50,7 +50,11 @@ export default function Home() {
       <div className={styles.devices}>
         <SeamProvider publishableKey="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL">
           <ConnectAccountButton className="connect-account-button" />
-          <DeviceTable />
+          <DeviceTable
+            onDeviceClick={(deviceId) => {
+              console.log(deviceId)
+            }}
+          />
         </SeamProvider>
       </div>
 

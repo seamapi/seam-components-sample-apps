@@ -1,6 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+
+const handleDeviceClick = (deviceId) => {
+  console.log(deviceId)
+}
 </script>
 
 <template>
@@ -15,7 +19,10 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
     <seam-connect-account-button class='connect-account-button' publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"></seam-connect-account-button>
-    <seam-device-table publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"></seam-device-table>
+    <seam-device-table
+      publishable-key="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL"
+      .onDeviceClick="handleDeviceClick"
+    ></seam-device-table>
   </main>
 </template>
 
