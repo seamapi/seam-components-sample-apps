@@ -39,3 +39,13 @@ $ npx create-expo-app MyApp
    ```js
    config.resolver.sourceExts.push("mjs");
    ```
+4. Setup Babel to transform private methods. Install with
+```
+$ npm i --save-dev @babel/plugin-transform-private-methods
+```
+and add to `babel.config.js`
+```js
+{
+   plugins: [['@babel/plugin-transform-private-methods', { loose: true }]]
+}
+```
