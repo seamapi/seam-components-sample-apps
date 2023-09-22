@@ -15,7 +15,11 @@ export default function App() {
       <div>
         <SeamProvider publishableKey="seam_pk1J0Bgui_oYEuzDhOqUzSBkrPmrNsUuKL">
           <ConnectAccountButton />
-          <DeviceTable />
+          <DeviceTable
+            onDeviceClick={(deviceId) => {
+              console.log(deviceId)
+            }}
+          />
         </SeamProvider>
       </div>
     </View>
