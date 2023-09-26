@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@seamapi/react": "^1.60.2",
+    "@seamapi/react": "^1.60.3",
     "vue": "^3.3.4"
   },
   "devDependencies": {
