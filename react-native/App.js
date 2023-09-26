@@ -1,3 +1,4 @@
+import '@ungap/event-target'
 import {
   ConnectAccountButton,
   DeviceTable,
