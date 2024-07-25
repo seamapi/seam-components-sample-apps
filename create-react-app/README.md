@@ -33,29 +33,6 @@ $ npx create-react-app my-app
    ```
    $ npm i --save-dev @babel/plugin-proposal-private-property-in-object
    ```
-2. Webpack will generate warnings about missing source maps.
-   These may be safely ignored.
-   To [suppress these warnings](https://github.com/facebook/create-react-app/discussions/11767#discussioncomment-2421668),
-   setup [Craco](https://craco.js.org/).
-   Then create a `craco.config.js` with an `ignoreWarnings` function like
-   ```js
-   module.exports = {
-     webpack: {
-       configure: {
-         ignoreWarnings: [
-           function ignoreSourcemapsloaderWarnings(warning) {
-             return (
-               warning.module &&
-               warning.module.resource.includes("node_modules/svix") &&
-               warning.details &&
-               warning.details.includes("source-map-loader")
-             );
-           },
-         ],
-       },
-     },
-   };
-   ```
 
 # Getting Started with Create React App
 
