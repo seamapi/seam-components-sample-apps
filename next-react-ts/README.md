@@ -1,3 +1,39 @@
+# Next.js React TypeScript
+
+## Run
+
+```
+$ npm i
+$ npm run build
+$ npm start
+```
+
+## Stack
+
+- Next.js: https://nextjs.org/
+- React: https://react.dev/
+- TypeScript: https://www.typescriptlang.org/
+- Seam Components: https://docs.seam.co/latest/seam-components/overview/get-started-with-client-side-components
+
+## Setup
+
+_https://nextjs.org/learn/basics/create-nextjs-app/setup_
+
+### Bootstrap
+
+Generate a new project with
+
+```
+$ npx create-next-app my-app
+```
+
+### Configuration
+
+Seam Components are [Client Components](https://nextjs.org/docs/getting-started/react-essentials#client-components).
+Pages and components that use them must set the `"use client"` directive.
+
+## Description
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
