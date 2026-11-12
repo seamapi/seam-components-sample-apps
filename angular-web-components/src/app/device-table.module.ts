@@ -1,9 +1,9 @@
 import { Component, Input, NgModule, CUSTOM_ELEMENTS_SCHEMA, Output, EventEmitter, ViewChild } from "@angular/core";
 
 @Component({
-  selector: "device-table",
-  template:
-    '<seam-device-table #child [publishableKey]="publishableKey"></seam-device-table>',
+    selector: "device-table",
+    template: '<seam-device-table #child [publishableKey]="publishableKey"></seam-device-table>',
+    standalone: false
 })
 export class DeviceTable {
   @Input() publishableKey?: string;
