@@ -48,6 +48,10 @@
     "@svgr/plugin-svgo": {
       "svgo": "^2.8.4"
     },
-    "uuid": "^11.1.1"
+    "uuid": "^11.1.1",
+    "sucrase": {
+      "glob": "^14.0.2",
+      "minimatch": "^11.0.1"
+    }
   }
 }

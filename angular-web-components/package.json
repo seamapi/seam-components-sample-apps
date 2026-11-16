@@ -37,6 +37,18 @@
     "typescript": "~5.9.3"
   },
   "overrides": {
-    "uuid": "^11.1.1"
+    "uuid": "^11.1.1",
+    "@npmcli/package-json": {
+      "minimatch": "^11.0.1"
+    },
+    "@tufjs/models": {
+      "minimatch": "^11.0.1"
+    },
+    "cacache": {
+      "minimatch": "^11.0.1"
+    },
+    "ignore-walk": {
+      "minimatch": "^11.0.1"
+    }
   }
 }
